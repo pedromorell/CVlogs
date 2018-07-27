@@ -1,0 +1,54 @@
+.main {
+	
+	width: 800px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#cabecera-formulario {
+	
+}
+
+select {
+	width: 100%;
+}
+
+.celda-form {
+	margin: 10px 0px;
+}
+
+.btn-aceptar {
+	margin-top: 20px;
+	background-color: #1a75ff;
+	border-radius: 5px;
+	padding: 10px;
+	border: 0;
+	color: white;
+	font-size: 22px;
+	min-width: 200px;
+}
+
+.btn-aceptar:active {
+	background-color: #0052cc;
+}
+
+.btn-aceptar:disabled {
+	background-color: #ccc;
+}
+
+.centrar-texto {
+	text-align: center;
+}
+
+.logo {
+	width: 300px;
+}
+
+.loading-img {
+	display: block;
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	background-image: url("../img/loading.gif");
+	background-position: center; 
+}
