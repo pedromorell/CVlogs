@@ -25,21 +25,41 @@ public class WebController {
 			BufferedReader stdInput = new BufferedReader(new 
 				     InputStreamReader(proc.getInputStream()));
 
-				BufferedReader stdError = new BufferedReader(new 
-				     InputStreamReader(proc.getErrorStream()));
+			BufferedReader stdError = new BufferedReader(new 
+			     InputStreamReader(proc.getErrorStream()));
 
-				// read the output from the command
-				System.out.println("Here is the standard output of the command:\n");
-				String s = null;
-				while ((s = stdInput.readLine()) != null) {
-				    System.out.println(s);
-				}
+			// read the output from the command
+			System.out.println("Here is the standard output of the command:\n");
+			String s = null;
+			while ((s = stdInput.readLine()) != null) {
+			    System.out.println(s);
+			}
 
-				// read any errors from the attempted command
-				System.out.println("Here is the standard error of the command (if any):\n");
-				while ((s = stdError.readLine()) != null) {
-				    System.out.println(s);
-				}
+			// read any errors from the attempted command
+			System.out.println("Here is the standard error of the command (if any):\n");
+			while ((s = stdError.readLine()) != null) {
+			    System.out.println(s);
+			}
+			proc = Runtime.getRuntime().exec("python " + dir + "\\src\\main\\webapp\\python\\clustering.py");
+			stdInput = new BufferedReader(new 
+				     InputStreamReader(proc.getInputStream()));
+
+			stdError = new BufferedReader(new 
+			     InputStreamReader(proc.getErrorStream()));
+
+			// read the output from the command
+			System.out.println("Here is the standard output of the command:\n");
+			s = null;
+			while ((s = stdInput.readLine()) != null) {
+			    System.out.println(s);
+			}
+
+			// read any errors from the attempted command
+			System.out.println("Here is the standard error of the command (if any):\n");
+			while ((s = stdError.readLine()) != null) {
+			    System.out.println(s);
+			}
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
