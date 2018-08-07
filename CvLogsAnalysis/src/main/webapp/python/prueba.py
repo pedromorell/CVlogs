@@ -9,8 +9,8 @@ num_rows = worksheet.nrows - 1
 curr_row = 0
 
 with open('LogsAmpliado.csv', 'wb') as csvfile:
-        spamwriter = csv.writer(csvfile, delimiter=',')
-
+        spamwriter = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+        spamwriter.writerow(["hora", "contexto", "componente", "nombre", "user id", "descripcion", "module id"])
         # Escritura en csv con las columnas ampliadas de la descripción
         while curr_row < num_rows:
 
@@ -45,6 +45,8 @@ with open('LogsAmpliado.csv', 'wb') as csvfile:
                 # Generación de la fila con todos los campos, incluidos los ya existentes
                 n1 = worksheet.cell_value(rowx=curr_row, colx=0)
                 n2 = worksheet.cell_value(rowx=curr_row, colx=1)
+                if ('' in n2):
+                        n2 = n2.replace("", "")
                 n3 = worksheet.cell_value(rowx=curr_row, colx=2)
                 n4 = worksheet.cell_value(rowx=curr_row, colx=3)
                 row = [n1, n2, n3, n4, a1, a2, a3]

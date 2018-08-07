@@ -3,13 +3,24 @@
 			<div class="content">
 			<ul>
 				<li><h4>Diagrama</h4>
-					<img src="img/foo.png" alt="Diagrama" class="centrar-bloque">
+					<img src="img/ej.jpg" alt="Diagrama" class="centrar-bloque" data-toggle="modal" data-target="#zoom">
 				</li>
 			</ul>
 			</div>
 			<p><a href="/">Volver al inicio</a><p>
 		</div>
 		
+	</div>
+	<!-- <button type="button" data-toggle="modal" data-target="#cargando">Prueba</button> -->
+	<!-- Modal -->
+	<div class="modal" tabindex="-1" role="dialog" id="zoom">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body centrar-texto">
+	      		<img src="img/ej.jpg" alt="Diagrama">
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </body>
 </html>

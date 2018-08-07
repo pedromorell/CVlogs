@@ -17,6 +17,37 @@
 						  <option value="clustering">Clustering</option>
 						</select>
 					</div>
+					<div class="parametros-total" hidden="true">
+						<div class="parametros">
+							<div class="celda-form" id="celda-x">
+								<label for="xInput">Parámetro en la X</label><br/>
+								
+								<select name="x" id="xInput">
+								  <option value="none">---</option>
+								  <option value="clustering">Clustering</option>
+								</select>
+							</div>
+							
+							<div class="celda-form" id="celda-y">
+								<label for="yInput">Parámetro en la Y</label><br/>
+								
+								<select name="y" id="yInput">
+								  <option value="none">---</option>
+								  <option value="clustering">Clustering</option>
+								</select>
+							</div>
+						</div>
+						<div class="parametros">
+							<div class="celda-form" id="celda-c">
+								<label for="colourInput">Color</label><br/>
+								
+								<select name="colour" id="colourInput">
+								  <option value="none">---</option>
+								  <option value="clustering">Clustering</option>
+								</select>
+							</div>
+						</div>
+					</div>
 					
 				</div>
 				<div class="centrar-texto">
