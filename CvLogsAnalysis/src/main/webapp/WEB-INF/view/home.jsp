@@ -24,7 +24,7 @@
 								
 								<select name="x" id="xInput">
 								  <option value="none">---</option>
-								  <option value="clustering">Clustering</option>
+								  <option value="ex">Example</option>
 								</select>
 							</div>
 							
@@ -33,7 +33,7 @@
 								
 								<select name="y" id="yInput">
 								  <option value="none">---</option>
-								  <option value="clustering">Clustering</option>
+								  <option value="ex">Example</option>
 								</select>
 							</div>
 						</div>
@@ -43,7 +43,7 @@
 								
 								<select name="colour" id="colourInput">
 								  <option value="none">---</option>
-								  <option value="clustering">Clustering</option>
+								  <option value="ex">Example</option>
 								</select>
 							</div>
 						</div>
