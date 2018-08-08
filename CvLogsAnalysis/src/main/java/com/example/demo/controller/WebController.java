@@ -21,7 +21,7 @@ public class WebController {
 	String aceptar() {
 		final String dir = System.getProperty("user.dir");
 		try {
-			Process proc = Runtime.getRuntime().exec("python " + dir + "\\src\\main\\webapp\\python\\prueba.py");
+			Process proc = Runtime.getRuntime().exec("python " + dir + "\\src\\main\\webapp\\python\\limpiar.py");
 			BufferedReader stdInput = new BufferedReader(new 
 				     InputStreamReader(proc.getInputStream()));
 

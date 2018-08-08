@@ -18,13 +18,15 @@
 						</select>
 					</div>
 					<div class="parametros-total" hidden="true">
+						<h4>Parámetros</h4>
 						<div class="parametros">
 							<div class="celda-form" id="celda-x">
 								<label for="xInput">Parámetro en la X</label><br/>
 								
 								<select name="x" id="xInput">
 								  <option value="none">---</option>
-								  <option value="ex">Example</option>
+								  <option value="hora">Hora</option>
+								  <option value="user-id">Id de usuario</option>
 								</select>
 							</div>
 							
@@ -33,7 +35,10 @@
 								
 								<select name="y" id="yInput">
 								  <option value="none">---</option>
-								  <option value="ex">Example</option>
+								  <option value="contexto">Contexto</option>
+								  <option value="componente">Componente</option>
+								  <option value="descripcion">Descripción del evento</option>
+								  <option value="module-id">Id de módulo</option>
 								</select>
 							</div>
 						</div>
@@ -43,7 +48,9 @@
 								
 								<select name="colour" id="colourInput">
 								  <option value="none">---</option>
-								  <option value="ex">Example</option>
+								  <option value="contexto">Contexto</option>
+								  <option value="componente">Componente</option>
+								  <option value="descripcion">Descripcion del evento</option>
 								</select>
 							</div>
 						</div>
