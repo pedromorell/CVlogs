@@ -5,22 +5,32 @@ import java.io.IOException;
 
 import weka.core.Instances;
 import weka.core.converters.CSVLoader;
+import weka.gui.visualize.JPEGWriter;
+import weka.gui.visualize.Plot2D;
 import weka.gui.visualize.PlotData2D;
 
 public class WekaDriver {
 	
-	public static Instances readCsv() throws IOException {
+	public Instances readCsv() throws IOException {
 		CSVLoader loader = new CSVLoader();
-		loader.setSource(new File("LogsAmpliado.csv"));
+		File file = new File("LogsAmpliado.csv");
+		loader.setSource(file);
 		Instances data = loader.getDataSet();
 		return data;
 	}
 	
-	public static void visualizeGraph(Instances data, String x, String y, String c) {
+	public void visualizeGraph(Instances data, int x, int y, int c) throws Exception {
 		PlotData2D pd1 = new PlotData2D(data);
-		pd1.setXindex(0);
-		pd1.setYindex(1);
-		pd1.setCindex(1);
+		
+		Plot2D plot = new Plot2D();
+		plot.setMasterPlot(pd1);
+		
+		plot.setXindex(x);
+		plot.setYindex(y);
+		
+		File file1 = new File("imagen.jpg");
+		JPEGWriter writer = new JPEGWriter(plot, file1);
+		writer.generateOutput();
 	}
 
 }

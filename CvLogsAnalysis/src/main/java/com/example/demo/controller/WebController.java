@@ -9,6 +9,10 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.example.weka.WekaDriver;
+
+import weka.core.Instances;
+
 @Controller
 public class WebController {
 	
@@ -41,6 +45,14 @@ public class WebController {
 			    System.out.println(s);
 			}
 			
+			/*WekaDriver driver = new WekaDriver();
+			Instances data = driver.readCsv();
+			try {
+				driver.visualizeGraph(data, 0, 1, 1);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}*/
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -92,3 +92,7 @@ select {
 	padding: 20px;
 	margin: 20px 0;
 }
+
+.modal-diagrama {
+	max-width: 1200px;
+}
